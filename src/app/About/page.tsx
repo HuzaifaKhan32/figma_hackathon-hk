@@ -13,6 +13,8 @@ import BrandsName from '../components/BrandsName';
 import AboutImage from "../../../public/aboutImage.png"
 
 
+
+
 const teamData = [
     {
         image: card1

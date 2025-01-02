@@ -8,6 +8,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaLinkedin } from "react-icons/fa";
 
 
+
 function Price() {
     return (
         <div className='container max-w-5xl mx-auto'>

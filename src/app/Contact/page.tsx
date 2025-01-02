@@ -9,6 +9,7 @@ import { BsEnvelope } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 
 
+
 function ContactPage() {
     return (
         <div className='container max-w-5xl mx-auto min-h-screen'>

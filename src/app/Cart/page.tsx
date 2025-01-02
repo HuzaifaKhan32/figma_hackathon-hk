@@ -24,6 +24,7 @@ const cartData: CartData[] = [
     }
 ]
 
+
 function page() {
     return (
         <div className='cart max-w-5xl mx-auto min-h-screen'>
