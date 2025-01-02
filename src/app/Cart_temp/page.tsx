@@ -1,154 +1,274 @@
 import React from 'react'
-import aboutHero from "../../../public/technology 1.png"
-import Image from 'next/image'
-import video from "../../../public/video.png"
-import { FaPlay } from "react-icons/fa";
-import card1 from "../../../public/card1.jpg"
-import card2 from "../../../public/card2.jpg"
-import card3 from "../../../public/card3.jpg"
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
 import BrandsName from '../components/BrandsName';
-import AboutImage from "../../../public/aboutImage.png"
+import { IoMdCheckmark } from "react-icons/io";
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
+import { FaLinkedin } from "react-icons/fa";
 
 
 
-
-const teamData = [
-    {
-        image: card1
-    },
-    {
-        image: card2
-    },
-    {
-        image: card3
-    }
-]
-
-function AboutPage() {
+function Price() {
     return (
-        <>
+        <div className='container max-w-5xl mx-auto'>
+            <div className="headings min-h-96 w-full flex justify-center items-center gap-4 flex-col">
+                <h4 className='text-[#737373] font-bold text-base'>PRICING</h4>
+                <h1 className='text-[#252B42] font-bold text-6xl max-md:text-5xl max-md:text-center'>Simple Pricing</h1>
+                <div className='text-sm font-bold text-[#737373] flex justify-between items-center gap-4'>
+                    <p className='text-[#252B42]'>Home</p>
+                    <IoIosArrowForward />
+                    <p>Pricing</p>
+                </div>
+            </div>
+            <div className="pricing w-full flex justify-center items-center flex-col min-h-24 gap-3">
+                <h1 className='text-[#252B42] font-bold text-4xl'>Pricing</h1>
+                <div className='text-sm font-bold text-[#737373] text-center'>
+                    <p className='text-sm font-bold text-[#737373] text-center'>{`Problems trying to resolve the conflict between`}</p>
+                    <p className='text-center'>{`the two major realms of classNameical physics: Newtonian mechanics `}</p>
+                </div>
+            </div>
+            <div className='priceCards flex items-center justify-between max-md:flex-col max-md:gap-5'>
+                <section className="bg-white">
+                    <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
 
-            <div className='container max-w-5xl mx-auto min-h-screen'>
-                <div className='w-full h-full flex justify-between items-center max-md:flex-col max-md:py-20'>
-                    <div className='w-1/2 h-full flex items-start flex-col gap-10 max-md:flex-col max-md:items-center max-md:justify-center max-md:w-full '>
-                        <h3 className='font-bold text-base text-[#252B42]'>About Company</h3>
-                        <h1 className='text-6xl font-bold text-[#252B42]'>About Us</h1>
-                        <p className='text-xl text-[#737373] max-md:text-center'>
-                            <p>We know how large objects will act,</p>
-                            <p>but things on a small scale</p>
-                        </p>
-                        <button className='bg-[#23A6F0] text-white px-10 py-4 font-bold rounded'>Get Qoute Now</button>
-                    </div>
-                    <div className='relative w-1/2 h-full flex items-end justify-end max-md:w-full  max-md:px-10 max-md:justify-center max-md:items-center'>
-                        <Image
-                            src={aboutHero}
-                            alt='Hero-Image'
-                            quality={100}
-                            priority
-                            className='z-50' />
-                        <div className="big-ellipse absolute max-md:h-80 max-md:w-80 h-[30rem] w-[30rem] bg-[#FFE9EA] rounded-full max-md:right-[20%] max-md:top-[10%]"></div>
-                        <div className="medium-ellipse absolute max-md:h-12 max-md:w-12 h-20 w-20 bg-[#FFE9EA] rounded-full max-md:left-[15%] max-md:top-[10%]"></div>
-                        <div className="small-ellipse absolute h-8 w-8 bg-[#FFE9EA] rounded-full max-md:right-[12%] max-md:top-[43%] max-md:w-5 max-md:h-5"></div>
-                        <div className="xsmall1-ellipse absolute h-4 w-4 bg-[#977DF4] rounded-full max-md:right-[12%] max-md:top-[20%] max-md:w-3 max-md:h-3"></div>
-                        <div className="xsmall2-ellipse absolute h-4 w-4 max-md:w-3 max-md:h-3 bg-[#977DF4] rounded-full max-md:left-[15%] max-md:bottom-[40%]"></div>
-                    </div>
-                </div>
-                <div className='flex justify-between items-center py-6 px-8 max-md:flex-col max-md:py-20'>
-                    <div className="left w-1/2 h-full flex flex-col gap-6 items-start max-md:w-full max-md:items-center max-md:justify-center max-md:gap-5">
-                        <p className='text-[#E74040] text-sm max-md:font-bold'>Problem trying</p>
-                        <p className='font-bold text-2xl text-[#252B42]'>Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.</p>
-                    </div>
-                    <div className="right w-1/2 h-full flex items-center justify-center gap-6 flex-col max-md:w-full">
-                        <p></p>
-                        <p className='text-[#737373] text-sm'>Problems trying to resolve the conflict between the two major realms of classNameical physics: Newtonian mechanics </p>
-                    </div>
-                </div>
-                <div className='min-h-64 flex justify-between items-center py-20 text-[#252B42] font-bold text-6xl px-14 max-md:w-full max-md:flex-col max-md:items-center max-md:justify-center max-md:py-14 max-md:px-8 max-md:gap-10'>
-                    <div className='flex flex-col gap-2 max-md:justify-center max-md:items-center'>
-                        <p>15K</p>
-                        <p className='text-[#737373] font-bold text-base'>Happy Customers</p>
-                    </div>
-                    <div className='flex flex-col gap-2 max-md:justify-center max-md:items-center'>
-                        <p>150K</p>
-                        <p className='text-[#737373] font-bold text-base'>Monthly Visitors</p>
-                    </div>
-                    <div className='flex flex-col gap-2 max-md:justify-center max-md:items-center'>
-                        <p>15</p>
-                        <p className='text-[#737373] font-bold text-base'>Countries Worlwide</p>
-                    </div>
-                    <div className='flex flex-col gap-2 max-md:justify-center max-md:items-center'>
-                        <p>100+</p>
-                        <p className='text-[#737373] font-bold text-base'>Top Partners</p>
-                    </div>
-                </div>
-                <div className="video flex justify-center items-center py-10 relative max-md:px-10">
-                    <Image
-                        src={video}
-                        alt='Video'
-                        className='rounded-3xl max-h-[34rem]' />
-                    <button className='play-button bg-[#23A6F0] px-9 py-9 rounded-full absolute top-[50%] left-[50%] '>
-                        <FaPlay className='text-white' />
-                    </button>
-                </div>
-                <div className='max-md:px-10'>
-                    <div className='py-20 flex justify-center items-center flex-col gap-3'>
-                        <h1 className='font-bold text-4xl text-[#252B42]'>Meet Our Team</h1>
-                        <p className='w-[33rem] text-center max-md:w-full'>Problems trying to resolve the conflict between
-                            the two major realms of classNameical physics: Newtonian mechanics </p>
-                    </div>
-                    <div className='flex flex-wrap justify-between items-center max-md:justify-center max-md:gap-10'>
-                        {teamData.map((img, index) => (
-                            <div className='card flex justify-between items-center flex-col gap-6 pb-5' key={index}>
-                                <Image
-                                    src={img.image}
-                                    alt='card1'
-                                    priority
-                                    quality={100} />
-                                <div className='text-[#252B42] font-bold text-base'>
-                                    Username
+                        <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+                            {/* <!-- Pricing Card --> */}
+                            <div className="flex flex-col py-16 px-10 text-center text-[#252B42] bg-white rounded-lg border border-gray-100 shadow gap-9">
+                                <h3 className="mb-4 text-2xl font-bold">FREE</h3>
+                                <p className="font-bold text-[#737373] sm:text-lg dark:text-gray-400">Organize across all
+                                    apps by hand</p>
+                                <div className="flex justify-center gap-3">
+                                    <span className=" text-4xl font-extrabold text-[#23A6F0]">0</span>
+                                    <p className='flex flex-col items-start'>
+                                        <span className='text-[#23A6F0] text-4xl font-extrabold'>$</span>
+                                        <span className="text-[#8EC2F2]">Per month</span>
+                                    </p>
                                 </div>
-                                <div className='text-[#737373] font-bold'>
-                                    Profession
-                                </div>
-                                <div className='flex gap-5'>
-                                    <FaFacebook className='text-[#23A6F0]' />
-                                    <FaInstagram className='text-[#23A6F0]' />
-                                    <FaTwitter className='text-[#23A6F0]' />
-                                </div>
+                                {/* <!-- List --> */}
+                                <ul role="list" className="mb-8 space-y-4 text-left">
+                                    <li className="flex items-center space-x-3">
+
+                                        <IoMdCheckmark className="flex-shrink-0 w-5 h-5 text-white bg-green-500 rounded-full text-3xl" />
+                                        <span>Individual configuration</span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <IoMdCheckmark className="flex-shrink-0 w-5 h-5 text-white bg-green-500 rounded-full text-3xl" />
+                                        <span>No setup, or hidden fees</span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <IoMdCheckmark className="flex-shrink-0 w-5 h-5 text-white bg-green-500 rounded-full text-3xl" />
+                                        <span>Team size: <span className="font-semibold">1 developer</span></span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <IoMdCheckmark className="flex-shrink-0 w-5 h-5 text-white bg-[#BDBDBD] rounded-full text-3xl" />
+                                        <span>Premium support: <span className="font-semibold">6 months</span></span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <IoMdCheckmark className="flex-shrink-0 w-5 h-5 text-white bg-[#BDBDBD] rounded-full text-3xl" />
+                                        <span>Free updates: <span className="font-semibold">6 months</span></span>
+                                    </li>
+                                </ul>
+                                <a href="#" className=" bg-[#252B42] text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
                             </div>
-                        ))}
+                            {/* <!-- Pricing Card --> */}
+                            <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                                <h3 className="mb-4 text-2xl font-semibold">Company</h3>
+                                <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended & premium support.</p>
+                                <div className="flex justify-center items-baseline my-8">
+                                    <span className="mr-2 text-5xl font-extrabold">$99</span>
+                                    <span className="text-gray-500 dark:text-gray-400">/month</span>
+                                </div>
+                                {/* <!-- List --> */}
+                                <ul role="list" className="mb-8 space-y-4 text-left">
+                                    <li className="flex items-center space-x-3">
+
+                                        <svg className="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
+                                        <span>Individual configuration</span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <svg className="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
+                                        <span>No setup, or hidden fees</span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <svg className="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
+                                        <span>Team size: <span className="font-semibold">10 developers</span></span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <svg className="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
+                                        <span>Premium support: <span className="font-semibold">24 months</span></span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <svg className="flex-shrink-0 w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
+                                        <span>Free updates: <span className="font-semibold">24 months</span></span>
+                                    </li>
+                                </ul>
+                                <a href="#" className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-[#23A6F0]">Get started</a>
+                            </div>
+                            {/* <!-- Pricing Card --> */}
+                            <div className="flex flex-col py-16 px-10 text-center text-[#252B42] bg-white rounded-lg border border-gray-100 shadow gap-9">
+                                <h3 className="mb-4 text-2xl font-bold">FREE</h3>
+                                <p className="font-bold text-[#737373] sm:text-lg dark:text-gray-400">Organize across all
+                                    apps by hand</p>
+                                <div className="flex justify-center gap-3">
+                                    <span className=" text-4xl font-extrabold text-[#23A6F0]">0</span>
+                                    <p className='flex flex-col items-start'>
+                                        <span className='text-[#23A6F0] text-4xl font-extrabold'>$</span>
+                                        <span className="text-[#8EC2F2]">Per month</span>
+                                    </p>
+                                </div>
+                                {/* <!-- List --> */}
+                                <ul role="list" className="mb-8 space-y-4 text-left">
+                                    <li className="flex items-center space-x-3">
+
+                                        <IoMdCheckmark className="flex-shrink-0 w-5 h-5 text-white bg-green-500 rounded-full text-3xl" />
+                                        <span>Individual configuration</span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <IoMdCheckmark className="flex-shrink-0 w-5 h-5 text-white bg-green-500 rounded-full text-3xl" />
+                                        <span>No setup, or hidden fees</span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <IoMdCheckmark className="flex-shrink-0 w-5 h-5 text-white bg-green-500 rounded-full text-3xl" />
+                                        <span>Team size: <span className="font-semibold">1 developer</span></span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <IoMdCheckmark className="flex-shrink-0 w-5 h-5 text-white bg-[#BDBDBD] rounded-full text-3xl" />
+                                        <span>Premium support: <span className="font-semibold">6 months</span></span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+
+                                        <IoMdCheckmark className="flex-shrink-0 w-5 h-5 text-white bg-[#BDBDBD] rounded-full text-3xl" />
+                                        <span>Free updates: <span className="font-semibold">6 months</span></span>
+                                    </li>
+                                </ul>
+                                <a href="#" className=" bg-[#252B42] text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div className='py-20 max-md:py-10'>
+                <h1 className='text-center text-xl text-[#252B42] max-md:py-10'>Trusted Ny Over 4000 Big Countries</h1>
+                <BrandsName />
+            </div>
+            <div className="pricing-faqs">
+                <div className='flex justify-center items-center flex-col gap-3 py-20'>
+                    <h1 className='text-4xl font-bold text-[#252B42]'>Pricing FAQs</h1>
+                    <p className='text-[#737373] text-xl w-1/2 text-center'>Problems trying to resolve the conflict between
+                        the two major realms of Classical physics</p>
+                </div>
+                <div className="questions flex justify-between items-start flex-wrap max-md:flex-col">
+                    <div className="1 flex gap-5 items-start w-1/2 p-6 max-md:w-full">
+                        <div className='flex'>
+                            <IoIosArrowForward className='text-[#23A6F0]' />
+                        </div>
+                        <div>
+                            <p className='font-bold text-base text-[#252B42]'>the quick fox jumps over the lazy dog</p>
+                            <p className='text-[#737373] text-sm'>Met minim Mollie non desert Alamo est sit cliquey
+                                dolor do met sent. RELIT official consequent door ENIM
+                                RELIT Mollie. Excitation venial consequent sent
+                                nostrum met.</p>
+
+                        </div>
+                    </div>
+                    <div className="2 flex gap-5 items-start w-1/2 p-6 max-md:w-full">
+                        <div>
+                            <IoIosArrowForward className='text-[#23A6F0]' />
+                        </div>
+                        <div>
+                            <p className='font-bold text-base text-[#252B42]'>the quick fox jumps over the lazy dog</p>
+                            <p className='text-[#737373] text-sm'>Met minim Mollie non desert Alamo est sit cliquey
+                                dolor do met sent. RELIT official consequent door ENIM
+                                RELIT Mollie. Excitation venial consequent sent
+                                nostrum met.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div className="1 flex gap-5 items-start w-1/2 p-6 max-md:w-full">
+                        <div className='flex'>
+                            <IoIosArrowForward className='text-[#23A6F0]' />
+                        </div>
+                        <div>
+                            <p className='font-bold text-base text-[#252B42]'>the quick fox jumps over the lazy dog</p>
+                            <p className='text-[#737373] text-sm'>Met minim Mollie non desert Alamo est sit cliquey
+                                dolor do met sent. RELIT official consequent door ENIM
+                                RELIT Mollie. Excitation venial consequent sent
+                                nostrum met.</p>
+
+                        </div>
+                    </div>
+                    <div className="2 flex gap-5 items-start w-1/2 p-6 max-md:w-full">
+                        <div>
+                            <IoIosArrowForward className='text-[#23A6F0]' />
+                        </div>
+                        <div>
+                            <p className='font-bold text-base text-[#252B42]'>the quick fox jumps over the lazy dog</p>
+                            <p className='text-[#737373] text-sm'>Met minim Mollie non desert Alamo est sit cliquey
+                                dolor do met sent. RELIT official consequent door ENIM
+                                RELIT Mollie. Excitation venial consequent sent
+                                nostrum met.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div className="1 flex gap-5 items-start w-1/2 p-6 max-md:w-full">
+                        <div className='flex'>
+                            <IoIosArrowForward className='text-[#23A6F0]' />
+                        </div>
+                        <div>
+                            <p className='font-bold text-base text-[#252B42]'>the quick fox jumps over the lazy dog</p>
+                            <p className='text-[#737373] text-sm'>Met minim Mollie non desert Alamo est sit cliquey
+                                dolor do met sent. RELIT official consequent door ENIM
+                                RELIT Mollie. Excitation venial consequent sent
+                                nostrum met.</p>
+
+                        </div>
+                    </div>
+                    <div className="2 flex gap-5 items-start w-1/2 p-6 max-md:w-full">
+                        <div>
+                            <IoIosArrowForward className='text-[#23A6F0]' />
+                        </div>
+                        <div>
+                            <p className='font-bold text-base text-[#252B42]'>the quick fox jumps over the lazy dog</p>
+                            <p className='text-[#737373] text-sm'>Met minim Mollie non desert Alamo est sit cliquey
+                                dolor do met sent. RELIT official consequent door ENIM
+                                RELIT Mollie. Excitation venial consequent sent
+                                nostrum met.
+                            </p>
+
+                        </div>
                     </div>
                 </div>
-                <div className='pt-20 max-md:py-10'>
-                    <div className='py-20 flex justify-center items-center flex-col gap-3 max-md:py-14 max-md:px-10'>
-                        <h1 className='font-bold text-4xl text-[#252B42] text-center'>Big Companies Are Here</h1>
-                        <p className='w-[33rem] text-center max-md:w-full'>Problems trying to resolve the conflict between
-                            the two major realms of classNameical physics: Newtonian mechanics </p>
-                    </div>
-                    <BrandsName />
+                <h1 className='py-10 text-center text-[#737373] text-xl'>{`Haven’t got your answer? Contact our support`}</h1>
+            </div>
+            <div className='w-full h-screen flex justify-center items-center flex-col gap-8'>
+                <h1 className='text-center text-4xl text-[#252B42] font-bold'>Start your 14 days free trial</h1>
+                <p className='font-sm text-[#737373] w-1/2 text-center max-md:w-full'>Met minim Mollie non desert Alamo est sit cliquey dolor 
+                do met sent. RELIT official consequent.</p>
+                <button className='px-10 py-4 bg-[#23A6F0] text-white rounded'>Try for free</button>
+                <div className="flex justify-between items-center gap-8 p-3">
+                    <FaTwitter className='text-3xl text-[#23A6F0]'/>
+                    <FaFacebook className='text-3xl text-[#395185]'/>
+                    <GrInstagram className='text-3xl'/>
+                    <FaLinkedin className='text-3xl text-[#0A66C2]'/>
                 </div>
             </div>
-            <div className="flex justify-between items-center min-w-screen md:gap-4 gap-8 bg-[#2A7CC7] text-white max-md:px-10 max-md:items-center max-md:justify-center">
-                <div className="max-md:order-1 max-md:text-center py-28 pl-48 pr-36 flex flex-col justify-between items-start gap-3 max-md:pl-0 max-md:pr-0 max-md:items-center max-md:justify-center">
-                    <h3 className="text-base md:leading-10 font-bold">WORK WITH US</h3>
-                    <h1 className='font-bold text-4xl'>{`Now Let’s grow Yours`}</h1>
-                    <p className="mt-4 text-sm w-[27.5rem]">The gradual accumulation of information about atomic and small-scale behavior during the first quarter of the 20th </p>
-                    <button type="button" className="px-5 py-2.5 mt-8 rounded text-sm outline-none tracking-wide text-white hover:bg-blue-700 border-2">Button</button>
-                </div>
-                <div className="max-md:hidden">
-                    <Image
-                        src={AboutImage}
-                        alt='About Image'
-                        quality={100}
-                        priority />
-                </div>
-            </div>
-        </>
+
+        </div>
     )
 }
 
-export default AboutPage
-
+export default Price
