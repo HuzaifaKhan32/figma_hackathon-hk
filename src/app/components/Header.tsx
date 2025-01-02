@@ -13,67 +13,69 @@ import { GoHeart } from "react-icons/go";
 import { BsCart } from "react-icons/bs";
 
 function Header() {
-  return (
-    <>
-        <div className='information text-white w-full h-14 bg-[#252B42] flex items-center justify-between px-6 py-2'>
-        <div className="1 flex gap-10">
-            <div className="flex gap-1 items-center">
-                <FiPhone className='text-base'/>
-                <p className='font-bold text-sm'>(225) 555-0118</p>
-            </div>
-            <div className="flex gap-1 items-center">
-                <BsEnvelope className='text-base'/>
-                <p className='font-bold text-sm'>michelle.rivera@example.com</p>
-            </div>
-        </div>
-            <div className="2">
-                <p className='text-sm font-bold'>Follow Us  and get a chance to win 80% off</p>
-            </div>
-            <div className="3 flex gap-3">
-                <p className='text-sm font-bold'>Follow Us :</p>
-                <div className="icons flex gap-3 items-center">
-                <GrInstagram className='text-base'/>
-                <FaYoutube className='text-xl'/>
-                <FaFacebook className='text-base'/>
-                <FaTwitter className='text-base'/>
+    return (
+        <>
+            <div className='information text-white w-full h-14 bg-[#252B42] flex items-center justify-between px-6 py-2'>
+                <div className="1 flex gap-10">
+                    <div className="flex gap-1 items-center">
+                        <FiPhone className='text-base' />
+                        <p className='font-bold text-sm'>(225) 555-0118</p>
+                    </div>
+                    <div className="flex gap-1 items-center">
+                        <BsEnvelope className='text-base' />
+                        <p className='font-bold text-sm'>michelle.rivera@example.com</p>
+                    </div>
+                </div>
+                <div className="2">
+                    <p className='text-sm font-bold'>Follow Us  and get a chance to win 80% off</p>
+                </div>
+                <div className="3 flex gap-3">
+                    <p className='text-sm font-bold'>Follow Us :</p>
+                    <div className="icons flex gap-3 items-center">
+                        <GrInstagram className='text-base' />
+                        <FaYoutube className='text-xl' />
+                        <FaFacebook className='text-base' />
+                        <FaTwitter className='text-base' />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className='header px-6 w-full h-16 flex justify-between items-center gap-12'>
-            <div className="left">
-                <h1 className='text-[#252B42] text-2xl font-bold'>Bandage</h1>
-            </div>
-            <div className="right w-[68rem] flex justify-between items-center">
-                <div className="links font-bold text-sm text-[#737373] flex items-center justify-between gap-5">
-                    <Link href={"/"}>Home</Link>
-                    <Link href={"/Shops"} className='flex items-center gap-2'>
-                    <span>Shop</span> 
-                    <span> <IoIosArrowDown /> </span>
+            <div className='header px-6 w-full h-16 flex justify-between items-center gap-12'>
+                <div className="left">
+                    <Link href={"/"}>
+                        <h1 className='text-[#252B42] text-2xl font-bold'>Bandage</h1>
                     </Link>
-                    <Link href={"/About"}>About</Link>
-                    <Link href={"/"}>Blog</Link>
-                    <Link href={"/Contact"}>Contact</Link>
-                    <Link href={"/Price"}>Pricing</Link>
                 </div>
-                <div className="login text-[#23A6F0] text-sm font-bold flex items-center gap-5">
-                    <div className='flex gap-1 items-center'>
-                        <CiUser />
-                        <p>Login / Register</p>
+                <div className="right w-[68rem] flex justify-between items-center">
+                    <div className="links font-bold text-sm text-[#737373] flex items-center justify-between gap-5">
+                        <Link href={"/"}>Home</Link>
+                        <Link href={"/shops"} className='flex items-center gap-2'>
+                            <span>Shop</span>
+                            <span> <IoIosArrowDown /> </span>
+                        </Link>
+                        <Link href={"/about"}>About</Link>
+                        <Link href={"/contact"}>Contact</Link>
+                        <Link href={"/team"}>Team</Link>
+                        <Link href={"/price"}>Pricing</Link>
                     </div>
-                    <div className='text-base'> 
-                        <CiSearch />        
-                    </div>
-                    <div className='flex gap-1 text-base items-center'>
-                        <GoHeart /> 1
-                    </div>
-                    <div className='flex gap-1 text-base items-center'>
-                        <BsCart /> 1
+                    <div className="login text-[#23A6F0] text-sm font-bold flex items-center gap-5">
+                        <div className='flex gap-1 items-center'>
+                            <CiUser className='text-xl' stroke='1'/>
+                            <p>Login / Register</p>
+                        </div>
+                        <div className='text-base'>
+                            <CiSearch className='text-xl' stroke='1'/>
+                        </div>
+                        <div className='flex gap-1 text-base items-center'>
+                            <GoHeart className='text-xl' stroke='1'/> 4
+                        </div>
+                        <div className='flex gap-1 text-base items-center'>
+                            <BsCart className='text-xl' stroke='1'/> 2
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </>
-  )
+        </>
+    )
 }
 
 export default Header

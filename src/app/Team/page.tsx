@@ -14,6 +14,7 @@ import card9 from "../../../public/card9.jpg"
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import Image from 'next/image'
 import { GrInstagram } from 'react-icons/gr'
+import Link from 'next/link'
 
 
 const teamData = [
@@ -92,10 +93,10 @@ function TeamPage() {
                     do met sent. RELIT official consequent.</p>
                 <button className='px-10 py-4 bg-[#23A6F0] text-white rounded'>Try for free</button>
                 <div className="flex justify-between items-center gap-8 p-3">
-                    <FaTwitter className='text-3xl text-[#23A6F0]' />
-                    <FaFacebook className='text-3xl text-[#395185]' />
-                    <GrInstagram className='text-3xl' />
-                    <FaLinkedin className='text-3xl text-[#0A66C2]' />
+                    <Link href={"/"}><FaTwitter className='text-3xl text-[#23A6F0]' /></Link>
+                    <Link href={"/"}><FaFacebook className='text-3xl text-[#395185]' /></Link>
+                    <Link href={"/"}><GrInstagram className='text-3xl' /></Link>
+                    <Link href={"/"}><FaLinkedin className='text-3xl text-[#0A66C2]' /></Link>
                 </div>
             </div>
         </div>
