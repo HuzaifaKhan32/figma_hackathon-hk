@@ -31,22 +31,32 @@ const products = [
 
 
 function WhishlistProduct() {
+<<<<<<< HEAD
 
     
 
+=======
+>>>>>>> 666c92a8f5d879e6a98cf004041aa36dd0a93e4b
   return (
     <div className='max-w-[66rem] mx-auto py-10'>
         <div className="products flex items-center justify-evenly flex-wrap">
                 {products.map((card, index) => (
                     <Link href={`/Product/${card.id}`} key={index}>
                         <div className="card w-60 h-[38.5rem]">
+<<<<<<< HEAD
                             <div className='bg-[#E8E8E8] h-[28rem]'>
+=======
+                            <div className='bg-[#E8E8E8]'>
+>>>>>>> 666c92a8f5d879e6a98cf004041aa36dd0a93e4b
                                 <Image
                                     src={card.image}
                                     alt='Products'
                                     quality={100}
                                     priority
+<<<<<<< HEAD
                                     className='w-full h-full'
+=======
+>>>>>>> 666c92a8f5d879e6a98cf004041aa36dd0a93e4b
                                      />
                             </div>
                             <div className='content flex justify-center items-center p-6 gap-3 flex-col'>

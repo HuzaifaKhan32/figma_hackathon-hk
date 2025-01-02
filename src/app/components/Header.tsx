@@ -25,6 +25,7 @@ function Header() {
                         <BsEnvelope className='text-base' />
                         <p className='font-bold text-sm'>michelle.rivera@example.com</p>
                     </div>
+<<<<<<< HEAD
                 </div>
                 <div className="2">
                     <p className='text-sm font-bold'>Follow Us  and get a chance to win 80% off</p>
@@ -74,6 +75,59 @@ function Header() {
                     </div>
                 </div>
             </div>
+=======
+                </div>
+                <div className="2">
+                    <p className='text-sm font-bold'>Follow Us  and get a chance to win 80% off</p>
+                </div>
+                <div className="3 flex gap-3">
+                    <p className='text-sm font-bold'>Follow Us :</p>
+                    <div className="icons flex gap-3 items-center">
+                        <GrInstagram className='text-base' />
+                        <FaYoutube className='text-xl' />
+                        <FaFacebook className='text-base' />
+                        <FaTwitter className='text-base' />
+                    </div>
+                </div>
+            </div>
+            <div className='header px-6 w-full h-16 flex justify-between items-center gap-12'>
+                <div className="left">
+                    <h1 className='text-[#252B42] text-2xl font-bold'>Bandage</h1>
+                </div>
+                <div className="right w-[68rem] flex justify-between items-center">
+                    <div className="links font-bold text-sm text-[#737373] flex items-center justify-between gap-5">
+                        <Link href={"/"}>Home</Link>
+                        <Link href={"/Shops"} className='flex items-center gap-2'>
+                            <span>Shop</span>
+                            <span> <IoIosArrowDown /> </span>
+                        </Link>
+                        <Link href={"/About"}>About</Link>
+                        <Link href={"/"}>Blog</Link>
+                        <Link href={"/Contact"}>Contact</Link>
+                        <Link href={"/Price"}>Pricing</Link>
+                    </div>
+                    <div className="login text-[#23A6F0] text-sm font-bold flex items-center gap-5">
+                        <div className='flex gap-1 items-center'>
+                            <CiUser className='text-xl'/>
+                            <p>Login / Register</p>
+                        </div>
+                        <div >
+                            <CiSearch className='text-xl'/>
+                        </div>
+                        <div>
+                            <Link href={"/Whishlist"} className='flex gap-1 text-base items-center'>
+                                <GoHeart className='text-xl'/> 1
+                            </Link>
+                        </div>
+                        <div >
+                            <Link href={"/Cart"} className='flex gap-1 text-base items-center'>
+                                <BsCart className='text-xl'/> 1
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+>>>>>>> 666c92a8f5d879e6a98cf004041aa36dd0a93e4b
         </>
     )
 }
