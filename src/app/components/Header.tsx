@@ -63,15 +63,16 @@ function Header() {
                             <CiUser className='text-xl' stroke='1' />
                             <p>Login / Register</p>
                         </div>
-                        <div className='text-base'>
+                        <Link href={"/"} className='text-base'>
                             <CiSearch className='text-xl' stroke='1' />
-                        </div>
-                        <div className='flex gap-1 text-base items-center'>
+                        </Link>
+                        <Link href={"/whishlist"} className='flex gap-1 text-base items-center'>
+                            
                             <GoHeart className='text-xl' stroke='1' /> 4
-                        </div>
-                        <div className='flex gap-1 text-base items-center'>
+                        </Link>
+                        <Link href={"/cart"} className='flex gap-1 text-base items-center'>
                             <BsCart className='text-xl' stroke='1' /> 2
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
