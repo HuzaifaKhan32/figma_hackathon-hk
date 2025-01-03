@@ -31,9 +31,9 @@ function MobileNavbar() {
         </div>
       </div>
       <div className={`${visiblity ? "block" : "hidden"} toggle-menu min-h-48 absolute w-full z-[99] bg-white`}>
-        <ul className='flex justify-center items-center flex-col gap-5 py-4 px-6 text-3xl text-[#737373] font-bold'>
+        <ul className='flex justify-center items-center flex-col gap-5 py-4 px-6 text-2xl text-[#737373] font-semibold'>
           <li><Link href={"/"}>Home</Link></li>
-          <li><Link href={"/shop"}>Shop</Link></li>
+          <li><Link href={"/shops"}>Shop</Link></li>
           <li><Link href={"/about"}>About</Link></li>
           <li><Link href={"/contact"}>Contact</Link></li>
           <li><Link href={"/team"}>Team</Link></li>
